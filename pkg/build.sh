@@ -124,7 +124,7 @@ case $os in
       -a all --iteration "1+${os}${DEB_REVISION}" \
       --url "$URL" \
       --description "$DESCRIPTION" \
-      -d "default-jre-headless" \
+      -d "java-runtime | java-runtime-headless" \
       --deb-user root --deb-group root \
       --before-install $os/before-install.sh \
       --before-remove $os/before-remove.sh \
